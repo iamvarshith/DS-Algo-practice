@@ -1,3 +1,5 @@
+# Parsing String of symbols to Expression problem in python
+
 userinput = input('Please Enter the String   --  ')
 
 numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']

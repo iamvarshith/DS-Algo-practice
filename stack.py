@@ -1,3 +1,5 @@
+# check the parenthesis in the given string
+
 input = input('Enter the string to with the given brackets')
 
 stack = []
