@@ -24,7 +24,7 @@ class LinkedList:
 
     def printll(self):
         current = self.head
-        while (current):
+        while current:
             print(current.data, current.next)
             current = current.next
 
