@@ -1,4 +1,4 @@
-userinput = '1+2(9+2+1)'
+userinput = '1+2(9+2-1)'
 
 numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
 
@@ -13,6 +13,7 @@ def mathOperation(userinput):
     while (i < (len(userinput))):
 
         if userinput[i] in numbers:
+
             stack.append(userinput[i])
         if userinput[i] in operators:
             if userinput[i] == '+':
