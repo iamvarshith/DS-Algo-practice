@@ -32,10 +32,10 @@ def Inorder(r: Node):
 def preinorder(r: Node, pre: Node = None):
     while r.right:
         r = r.right
-    return (r.data)
+    return r.data
 
 
-def deleteelement(r: Node, element):
+def DeleteNode(r: Node, element):
     if r.left is None and r.right is None and r.data == element:
         r.data = None
         return Inorder(r)
@@ -51,14 +51,14 @@ def deleteelement(r: Node, element):
     elif r.data and r.data != element:
 
         if element < r.data:
-            return deleteelement(r.left, element)
+            return DeleteNode(r.left, element)
         if element > r.data:
-            return deleteelement(r.right, element)
+            return DeleteNode(r.right, element)
 
     elif r.right and r.left and r.data == element:
         k = preinorder(r.left)
         r.data = k
-        deleteelement(r.left, k)
+        DeleteNode(r.left, k)
 
 
 r = Node(20)
@@ -70,5 +70,5 @@ insert(r, 12)
 insert(r, 10)
 insert(r, 14)
 Inorder(r)
-deleteelement(r, 20)
+DeleteNode(r, 20)
 Inorder(r)
