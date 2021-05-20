@@ -1,0 +1,9 @@
+{
+  "name": "DS-Algo-practice",
+  "version": "1.0.0",
+  "dependencies": {
+    "prompt-sync": "^4.2.0",
+    "readlines": "^0.2.0",
+    "require": "^2.4.20"
+  }
+}
