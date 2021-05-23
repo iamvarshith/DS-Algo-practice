@@ -4,7 +4,7 @@
 arr = [0,1,4,5,6,3]
 sorted_array = sorted(arr)
 print(sorted_array)
-taget_element = 4
+taget_element = 9
 
 i = 0
 j = len(sorted_array)-1
