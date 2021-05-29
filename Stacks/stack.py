@@ -12,7 +12,7 @@ def checkIndentOfBrackets(input):
             stack.append('[')
 
         if input[i] == ']':
-            if stack[len(stack)-1] == '[':
+            if len(stack) !=0 and stack[len(stack)-1] == '[':
                 stack.pop()
             else:
                 stack.append(']')
@@ -21,7 +21,7 @@ def checkIndentOfBrackets(input):
             stack.append('(')
 
         if input[i] == ')':
-            if stack[len(stack)-1] == '(':
+            if len(stack) !=0 and stack[len(stack)-1] == '(':
                 stack.pop()
             else:
                 stack.append(')')
@@ -30,7 +30,8 @@ def checkIndentOfBrackets(input):
             stack.append('{')
 
         if input[i] == '}':
-            if stack[len(stack)-1] == '{':
+            print(len(stack))
+            if len(stack) !=0 and stack[len(stack)-1] == '{':
                 stack.pop()
             else:
                 stack.append('}')
